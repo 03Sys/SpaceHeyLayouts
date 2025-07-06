@@ -1,0 +1,432 @@
+<iframe src="https://www.youtube.com/redirect?event=video_description&q=https://ziad.ftp.sh/yt&html_redirect=1" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --headers: #fff; 
+    --links: #fff;
+    --text: #fff;
+    --names: #fff;
+    --background_image: url("https://ziad.ftp.sh/img/bg.png"); 
+    --font-family: Red Hat Display, Segoe UI, sans-serif;
+    --mynamesize: 48px;
+    --transparency: 0.2;
+    --curve: 0px;
+    --hue: 0deg;
+    --myactions: "ls actions";
+    --mytopics: "echo interests.md";
+    --mylinks: "ls links";
+    --blog: "03Blog:";
+}
+
+h3, h4, h5, .url-info b {
+    color: var(--headers) !important;
+}
+
+a {
+    color: var(--links) !important;
+}
+
+p, h2, td {
+    color: var(--text) !important;
+    font-family: var(--font-family) !important;
+}
+
+h1, .count, .friends a p {
+    color: var(--names) !important;
+}
+
+nav label {
+    color: var(--headers) !important;
+}
+
+.section h4 {
+    color: var(--names) !important;
+}
+
+.online {
+    color: var(--links) !important;
+    font-size: 120%;
+}
+
+.section {
+    color: var(--text) !important;
+}
+
+:root {
+    --box_color_and_seethru: rgba(0, 0, 0, var(--transparency));
+}
+
+h1, h2, h3, h4, h5, a, p, nav label, .section {
+    font-family: var(--font-family) !important;
+}
+
+h1, h2, h3, h4, h5, p {
+    padding-left: 5px !important;
+}
+
+.profile h1 {
+    font-size: var(--mynamesize) !important;
+    text-transform: none !important;
+    padding-left: 10px !important;
+    transform: rotateY(90deg);
+    animation: rotation 3s linear infinite;
+    width: 250px;
+}
+
+@keyframes rotation {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+/* .profile h1:before {
+   content: '';
+   display: block;
+   background: url('https://ziad.ftp.sh/img/logo.png');
+   height: 95px;
+   background-size: cover;
+} */
+
+body {
+    background-image: var(--background_image) !important;
+    background-color: black !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+
+.heading, .url-info, .blurbs, .mood, .blog-preview, .friends, .contact, .table, .table-section, footer {
+    background-color: var(--box_color_and_seethru) !important;
+    border-radius: var(--curve) !important;
+    padding: 8px !important;
+    border: var(--borders) !important;
+}
+
+.blog-preview {
+  padding: 15px !important;
+}
+
+.details {
+    background-color: transparent !important;
+}
+
+.table-section {
+    border: none !important;
+    background-color: var(--box_color_and_seethru) !important;
+    border-radius: var(--curve) !important;
+}
+
+table.details-table {
+    width: auto;
+}
+
+.details-table td {
+    vertical-align: unset;
+}
+
+.heading {
+    background: none !important;
+    padding-bottom: 0px !important;
+}
+
+.profile-pic img {
+    outline: none !important;
+    border-radius: 100px !important;
+    aspect-ratio: 1 / 1;
+}
+
+.friends-grid img {
+    outline: none !important;
+    filter: opacity(90%) !important;
+    width: 80% !important;
+    height: 80% !important;
+    border-radius: 100px !important;
+    filter: hue-rotate(var(--hue)) !important;
+    aspect-ratio: 1 / 1;
+}
+
+.inner img {
+    outline: none !important;
+}
+
+.comments-table td:first-child img:not(.icon) {
+    border-radius: 100px !important;
+    aspect-ratio: 1 / 1;
+}
+
+nav {
+    background-color: var(--box_color_and_seethru);
+    border-radius: 0px 0px var(--curve) var(--curve);
+}
+
+nav ul {
+    background: none !important;
+}
+
+nav img {
+    filter: opacity(80%) !important;
+}
+
+nav ul a img, .mood a img {
+    display: none !important;
+}
+
+.top {
+    background: none !important;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav img.logo {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(20%) saturate(4487%) hue-rotate(330deg) brightness(101%) contrast(98%) !important;
+}
+
+.url-info {
+    display: none !important;
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+    border-radius: var(--curve) !important;
+}
+
+main {
+    border-radius: var(--curve) !important;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.friends th, tr, .friends td, th, .icon, #comments, main, .comments-table, .friends, .profile-info, .table, .table-section, .contact, .url-info, .mood, .blurbs, .blog-preview, .details, .profile-pic img {
+    border: 0px solid white !important;
+    outline: none !important;
+}
+
+.icon {
+    border: none !important;
+}
+
+.mood {
+    margin-bottom: 10px !important;
+}
+
+.blurbs {
+    margin-top: 10px !important;
+}
+
+.friends {
+    margin-top: -10px !important;
+}
+
+.profile-info {
+    border-radius: var(--curve) !important;
+}
+
+.comments-table {
+    border-radius: var(--curve) !important;
+    border: none !important;
+}
+
+.table-section {
+    padding-bottom: 7px !important;
+}
+
+#comments {
+    margin-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.details p:last-child {
+    color: var(--links) !important;
+    filter: brightness(95%);
+}
+
+.contact, .f-row, .f-col {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.contact {
+    padding-left: 2px !important;
+}
+
+.f-row {
+    margin-bottom: 3px !important;
+    padding-bottom: 0px !important;
+    padding-top: 2px !important;
+    margin-top: 0px !important;
+}
+
+.f-col a {
+    margin-left: -2px !important;
+    padding-left: -2px !important;
+}
+
+.contact {
+    padding-bottom: 12px !important;
+}
+
+.search-wrapper input[type=text] {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid var(--headers) !important;
+    color: var(--names) !important;
+    border-radius: 10px !important;
+}
+
+button {
+    border-radius: 0px !important;
+    border: 1px solid var(--headers) !important;
+    font-family: var(--font-family) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    color: var(--headers) !important;
+}
+
+.logout-btn {
+    border: 0px !important;
+}
+
+code {
+    word-break: break-all !important;
+}
+
+.w-40 .table-section:last-child .heading h4 {
+    font-size: 0;
+}
+
+.w-40 .table-section:last-child .heading::after {
+    content: var(--mylinks);
+    font-family: var(--font-family) !important;
+    color: var(--headers) !important;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: -7px;
+}
+
+.w-40 .table-section:nth-last-child(2) .heading h4 {
+    font-size: 0;
+}
+
+.w-40 .table-section:nth-last-child(2) .heading::after {
+    content: var(--mytopics);
+    font-family: var(--font-family) !important;
+    color: var(--headers) !important;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: -7px;
+}
+
+.w-40 .contact .heading h4 {
+    font-size: 0;
+}
+
+.w-40 .contact .heading::after{
+    content: var(--myactions);
+    font-family: var(--font-family) !important;
+    color: var(--headers) !important;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: -7px;
+}
+
+.blog-preview h4 {
+    font-size: 0;
+}
+
+.blog-preview:before{
+    content: var(--blog);
+    font-family: var(--font-family) !important;
+    color: var(--headers) !important;
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 5px !important;
+}
+
+.blurbs .heading {
+    display: none !important;
+}
+
+hr {
+    border: 1px solid var(--names) !important;
+}
+
+.icon, .award img {
+    width: 0;
+}
+
+.icon, .award a::before {
+    font-size: 1.6em;
+    content: "✔";
+    color: #fff;
+}
+
+nav .links li:not(:last-child)::after, footer .links li:not(:last-child)::after {
+    content: " · ";
+    color: #fff;
+}
+
+  main:before {
+    width: 100%;
+    height: 360px;
+    display: block;
+    content: "";
+    background-image: url('https://files.catbox.moe/d69sqe.gif');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+
+@keyframes spin{
+    from{ transform:rotate(0deg); }
+    to{ transform:rotate(-360deg); }
+}
+.general-about .profile-pic img{
+    border-radius: 50%;
+    animation: spin 6s infinite linear;
+    aspect-ratio: 1 / 1;
+}
+
+/* Cursor: https://twitter.com/wobbuuu/status/1767122908634087448 */
+body {
+    cursor: url('https://files.catbox.moe/vu8ylc.cur'), auto;
+}
+
+.online img {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(20%) saturate(4487%) hue-rotate(330deg) brightness(101%) contrast(98%);
+}
+
+/* Floating image, credits to https://layouts.spacehey.com/layout?id=21331 */
+/* nav::before {
+    content: "";
+    background: url(https://files.catbox.moe/5ics57.png) no-repeat;
+    background-size: 200px;
+    position: fixed !important;
+    float: right;
+    display: inline;
+    bottom: 0;
+    right: 5px;
+    height: 200px;
+    width: 200px;
+    margin-bottom: -20px;
+} */
+
+.friends h4 {
+    font-size: 0;
+}
+
+.table-section table.details-table a[rel='noopener ugc me'] {
+    font-size: 0;
+}
+
+iframe {
+    content: "";
+    position: fixed !important;
+    float: right;
+    display: inline;
+    bottom: 0;
+    right: 6px;
+    margin-bottom: 6px;
+    width: 200px;
+    height: 100px;
+}
+</style>

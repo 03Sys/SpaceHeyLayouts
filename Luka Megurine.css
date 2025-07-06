@@ -1,0 +1,411 @@
+<iframe src="https://www.youtube.com/embed/dvsPRlm4I_A?autoplay=1&;loop=1&;controls=1" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+
+/* Credits to https: //blog.spacehey.com/entry?id=1254 for the layout template */
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary: #333;
+	--secondary: #444;
+    --links: #ff6600;
+    --text: #ddd;
+    --names: #ddd;
+    --background_image: url("https://ec.crypton.co.jp/img/vocaloid/bg_detail_luka.jpg"); 
+    --font-family: Inter, Arial, helvetica, sans-serif;
+    --mynamesize: 48px;
+    --transparency: 0.6;
+    --hue: 0deg;
+}
+
+h3, h4, h5, .url-info b {
+    color: var(--text) !important;
+}
+
+a {
+    color: var(--links) !important;
+	font-size: 0.95em;
+}
+
+footer {
+    background-color: #202020 !important;
+}
+
+footer p, footer i {
+    color: #666 !important;
+}
+
+footer a {
+    color: #999 !important;
+}
+
+p, h2, td {
+    color: var(--text) !important;
+    font-family: var(--font-family) !important;
+	font-size: 0.95em;
+}
+
+h1, .count, .friends a p {
+    color: var(--names) !important;
+}
+
+.section h4 {
+    color: var(--names) !important;
+}
+
+.online {
+    color: #7e3471 !important;
+    font-size: 15pt;
+	text-transform: lowercase !important;
+}
+
+.section {
+    color: var(--text) !important;
+}
+
+:root {
+    --box_color_and_seethru: rgba(230, 230, 230, var(--transparency));
+}
+
+h1, h2, h3, h4, h5, a, p, nav label, .section {
+    font-family: var(--font-family) !important;
+	margin: 0;
+	margin-bottom: 9px;
+}
+
+.profile h1 {
+    color: #7e3471 !important;
+    font-size: var(--mynamesize) !important;
+    text-transform: none !important;
+    padding-left: 10px !important;
+    width: 250px;
+}
+
+body {
+    background-image: var(--background_image) !important;
+    background-color: black !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+
+.heading, .url-info, .blurbs, .mood, .blog-preview, .friends, .contact, .table, .table-section, footer {
+    padding: 8px !important;
+    border: 0px !important;
+}
+
+.blog-preview {
+  padding: 15px !important;
+}
+
+.details, .general-about, .profile-pic, .contact, .blog-preview, .friends {
+    background-color: var(--primary) !important;
+}
+
+.mood, .table-section, .blurbs, #comments {
+    background-color: var(--secondary) !important;
+}
+
+.table-section {
+    border: none !important;
+}
+
+table.details-table {
+    width: auto;
+}
+
+.details-table td {
+    vertical-align: unset;
+}
+
+.heading {
+    background: none !important;
+    padding-bottom: 0px !important;
+}
+
+.profile-pic img {
+    outline: none !important;
+    aspect-ratio: 1 / 1;
+}
+
+.friends-grid img {
+    outline: none !important;
+    filter: opacity(90%) !important;
+    width: 80% !important;
+    height: 80% !important;
+    filter: hue-rotate(var(--hue)) !important;
+    aspect-ratio: 1 / 1;
+}
+
+.inner img {
+    outline: none !important;
+}
+
+.comments-table td:first-child img:not(.icon) {
+    aspect-ratio: 1 / 1;
+}
+
+.logo {
+    content:url("https://ec.crypton.co.jp/img/vocaloid/logo_luka.png");
+    width: 128px !important;
+    height: 60px !important;
+  }
+
+nav {
+    background-color: var(--box_color_and_seethru);
+}
+
+nav a {
+    color: #333333 !important;
+}
+
+nav ul {
+    background: none !important;
+}
+
+nav img {
+    filter: opacity(80%) !important;
+}
+
+nav ul a img, .mood a img {
+    display: none !important;
+}
+
+.top {
+    background: none !important;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.url-info {
+    display: none !important;
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.friends th, tr, .friends td, th, .icon, #comments, main, .comments-table, .friends, .profile-info, .table, .table-section, .contact, .url-info, .mood, .blurbs, .blog-preview, .details, .profile-pic img {
+    border: 0px solid white !important;
+    outline: none !important;
+}
+
+.icon {
+    border: none !important;
+}
+
+.mood {
+    margin-bottom: 10px !important;
+}
+
+.blurbs {
+    margin-top: 10px !important;
+}
+
+.friends {
+    margin-top: -10px !important;
+}
+
+.comments-table {
+    border: none !important;
+}
+
+.table-section {
+    padding-bottom: 7px !important;
+}
+
+#comments {
+    margin-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.details p:last-child {
+    color: var(--links) !important;
+    filter: brightness(95%);
+}
+
+.contact, .f-row, .f-col {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 6px !important;
+    margin-right: 0px !important;
+}
+
+.contact {
+    padding-left: 2px !important;
+}
+
+.f-row {
+    margin-bottom: 3px !important;
+    padding-bottom: 0px !important;
+    padding-top: 2px !important;
+    margin-top: 0px !important;
+}
+
+.f-col a {
+    margin-left: -2px !important;
+    padding-left: -2px !important;
+}
+
+.contact {
+    padding-bottom: 12px !important;
+}
+
+.search-wrapper input[type=text] {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid var(--primary) !important;
+    color: var(--names) !important;
+}
+
+button {
+    border: 1px solid var(--primary) !important;
+    font-family: var(--font-family) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    color: var(--primary) !important;
+}
+
+.logout-btn {
+    border: 0px !important;
+}
+
+code {
+    word-break: break-all !important;
+}
+
+.w-40 .table-section:last-child .heading h4 {
+    font-size: 20pt;
+}
+
+.w-40 .table-section:nth-last-child(2) .heading h4 {
+    font-size: 20pt;
+}
+
+.w-40 .contact .heading h4 {
+    font-size: 20pt;
+}
+
+.blog-preview h4 {
+    font-size: 20pt;
+}
+
+.blurbs .heading {
+    display: none !important;
+}
+
+hr {
+    border: 1px solid var(--names) !important;
+}
+
+.icon, .award img {
+    width: 0;
+}
+
+.icon, .award a::before {
+    font-size: 1.6em;
+    content: "✔";
+    color: #fff;
+}
+
+nav .links li:not(:last-child)::after, footer .links li:not(:last-child)::after {
+    content: " | ";
+    color: #999;
+}
+
+nav .links a {
+    text-shadow: unset;
+}
+
+nav .top .right {
+    color: var(--primary) !important;
+}
+
+nav label {
+    font-size: 0;
+}
+
+.search-wrapper input[type=text] {
+    background-color: #ccc !important;
+	border: 1px solid #ddd !important;
+	color: #000 !important;
+	border-radius: 0px !important;
+}
+
+button {
+    border-radius: 0px !important;
+	border: 1px solid #ddd !important;
+	font-family: var(--font-family) !important;
+	background-color: #ccc !important;
+	color: #000 !important;
+}
+
+main:before {
+    width: 100%;
+    height: 360px;
+    display: block;
+    content: "";
+    background-image: url('https://files.catbox.moe/d69sqe.gif');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.general-about .profile-pic img {
+    aspect-ratio: 1 / 1;
+}
+
+/* Cursor: https://twitter.com/wobbuuu/status/1767122908634087448 */
+body {
+    cursor: url('https://files.catbox.moe/vu8ylc.cur'), auto;
+}
+
+.online img {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(36%) saturate(6442%) hue-rotate(359deg) brightness(100%) contrast(108%);
+}
+
+/* Floating image, credits to https://layouts.spacehey.com/layout?id=21331 */
+nav::before {
+    content: "";
+    background: url(https://ec.crypton.co.jp/img/vocaloid/img_illust_luka_min.png) no-repeat;
+    background-size: 119px;
+    position: fixed !important;
+    float: right;
+    display: inline;
+    bottom: 0;
+    right: 6px;
+    width: 119px;
+	height: 480px;
+	margin-bottom: 6px;
+}
+
+@media only screen and (max-width: 700px) {
+    nav::before {
+	    background-size: 72px;
+        width: 72px;
+	    height: 290px;
+	}
+}
+
+.friends h4 {
+    font-size: 2em;
+}
+
+.table-section table.details-table a[rel='noopener ugc me'] {
+    font-size: 0em;
+}
+
+iframe {
+    content: "";
+    position: fixed !important;
+    float: left;
+    display: inline;
+    bottom: 0;
+    left: 6px;
+    margin-bottom: 6px;
+    width: 200px;
+    height: 100px;
+}
+</style>
